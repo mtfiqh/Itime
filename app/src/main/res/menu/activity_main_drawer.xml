@@ -12,14 +12,14 @@
 
     <group android:id="@+id/group_menu">
         <item android:id="@+id/nav_item_three"
-              android:title="Item 4"/>
+              android:title="Rate Us"/>
     </group>
 
-    <item android:title="Title 1">
+    <item android:title="About">
         <menu>
             <item android:id="@+id/nav_item_four"
                   android:icon="@drawable/add"
-                  android:title="Item 6"
+                  android:title="Versi Aplikasi"
         </menu>
     </item>
 

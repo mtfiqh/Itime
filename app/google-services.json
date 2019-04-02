@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "726568120319",
+    "firebase_url": "https://itime-itera.firebaseio.com",
+    "project_id": "itime-itera",
+    "storage_bucket": "itime-itera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726568120319:android:995cd01b1c59f478",
+        "android_client_info": {
+          "package_name": "com.itera.itime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726568120319-ogk16j7u3666t0nfqedql53j2riu7h1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itera.itime",
+            "certificate_hash": "e77b4104870abd61e37565904336bd3401b88a87"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGoAEe73N5-1kbrtdSt9f3CY-aDxLb3ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726568120319-uvm48tmuldtoi12fqer01a5h4srk1v9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

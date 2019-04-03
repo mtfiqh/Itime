@@ -59,44 +59,89 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_first_layout -> {
-                loadFirst(frag1 = FirstFragment())
+            R.id.nav_lihatjadwal_layout -> {
+                loadLihatJadwal(frag1 = alihatjadwal())
             }
-            R.id.nav_second_layout -> {
-                loadSecond(frag2 = SecondFragment())
+            R.id.nav_catatan_layout -> {
+                loadCatatan(frag2 = bcatatan())
             }
-            R.id.nav_third_layout -> {
-                loadThird(frag3 = ThirdFragment())
+            R.id.nav_jadwal_layout -> {
+                loadJadwal(frag3 = cjadwal())
             }
-            R.id.nav_manage -> {
-
+            R.id.nav_datamatakuliah_layout -> {
+                loadDataMataKuliah(frag4 = ddatamatakuliah())
             }
-            R.id.nav_share -> {
-
+            R.id.nav_datadosen_layout -> {
+                loadDataDosen(frag5 = edatadosen())
             }
-            R.id.nav_send -> {
-
+            R.id.nav_dataruangan_layout -> {
+                loadDataRuangan(frag6 = fdataruangan())
+            }
+            R.id.nav_rateus_layout -> {
+                loadRateUs(frag7 = gRateUsFragment())
+            }
+            R.id.nav_share_layout -> {
+                loadShare(frag8 = hShare())
+            }
+            R.id.nav_setting_layout -> {
+                loadSetting(frag9 = iSetting())
             }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
-    private fun loadFirst(frag1: FirstFragment){
+    private fun loadLihatJadwal(frag1: alihatjadwal){
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.framelayout, frag1)
         fm.commit()
     }
 
-    private fun loadSecond(frag2: SecondFragment){
+    private fun loadCatatan(frag2: bcatatan){
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.framelayout, frag2)
         fm.commit()
     }
 
-    private fun loadThird(frag3: ThirdFragment){
+    private fun loadJadwal(frag3: cjadwal){
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.framelayout, frag3)
+        fm.commit()
+    }
+
+    private fun loadDataMataKuliah(frag4: ddatamatakuliah){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag4)
+        fm.commit()
+    }
+
+    private fun loadDataDosen(frag5: edatadosen){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag5)
+        fm.commit()
+    }
+
+    private fun loadDataRuangan(frag6: fdataruangan){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag6)
+        fm.commit()
+    }
+
+    private fun loadRateUs(frag7: gRateUsFragment){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag7)
+        fm.commit()
+    }
+
+    private fun loadShare(frag8: hShare){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag8)
+        fm.commit()
+    }
+
+    private fun loadSetting(frag9: iSetting){
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.framelayout, frag9)
         fm.commit()
     }
 }

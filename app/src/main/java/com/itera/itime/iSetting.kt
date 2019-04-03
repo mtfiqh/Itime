@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class SecondFragment: Fragment(){
+class iSetting: Fragment(){
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.second_layout, container, false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.isetting_layout, container, false)
     }
 }

@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class FirstFragment: Fragment(){
+class cjadwal: Fragment(){
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.first_layout, container, false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.cjadwal, container, false)
     }
 }

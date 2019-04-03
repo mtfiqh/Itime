@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class ThirdFragment: Fragment(){
+class bcatatan: Fragment(){
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.third_layout, container, false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.bcatatan, container, false)
     }
 }

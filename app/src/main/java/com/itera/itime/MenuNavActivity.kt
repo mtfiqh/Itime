@@ -78,7 +78,7 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 loadDataRuangan(frag6 = fdataruangan())
             }
             R.id.nav_rateus_layout -> {
-                loadRateUs(frag7 = gRateUsFragment())
+                loadRateUs(frag7 = grateus())
             }
             R.id.nav_share_layout -> {
                 loadShare(frag8 = hShare())
@@ -127,7 +127,7 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
         fm.commit()
     }
 
-    private fun loadRateUs(frag7: gRateUsFragment){
+    private fun loadRateUs(frag7: grateus){
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.framelayout, frag7)
         fm.commit()

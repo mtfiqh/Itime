@@ -1,5 +1,6 @@
 package com.itera.itime
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -75,7 +76,7 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 loadDataDosen(frag5 = edatadosen())
             }
             R.id.nav_dataruangan_layout -> {
-                loadDataRuangan(frag6 = fdataruangan())
+                startActivity(Intent(this,zdataruangan::class.java))
             }
             R.id.nav_rateus_layout -> {
                 loadRateUs(frag7 = grateus())
@@ -118,12 +119,6 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     private fun loadDataDosen(frag5: edatadosen){
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.framelayout, frag5)
-        fm.commit()
-    }
-
-    private fun loadDataRuangan(frag6: fdataruangan){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag6)
         fm.commit()
     }
 

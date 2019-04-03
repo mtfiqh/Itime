@@ -21,6 +21,14 @@
             "package_name": "com.itera.itime",
             "certificate_hash": "e77b4104870abd61e37565904336bd3401b88a87"
           }
+        },
+        {
+          "client_id": "726568120319-q0tvlenlb63v92041sn7qc1eg05t5tug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itera.itime",
+            "certificate_hash": "eff3ac88b15bef3eea10e71d45e7a0e577d39fe4"
+          }
         }
       ],
       "api_key": [

@@ -1,7 +1,13 @@
 package com.itera.itime
 
+import android.content.Context
+import android.graphics.drawable.DrawableContainer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

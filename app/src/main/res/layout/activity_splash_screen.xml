@@ -12,32 +12,35 @@
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:orientation="vertical">
+
         <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:id="@+id/splashscreen"
                 android:src="@drawable/splashscreen"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="200dp"
+                android:layout_gravity="center"
         />
+
         <TextView
                 android:text="ITime - Mahasiswa ITERA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/itime"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:gravity="center"
-
                 />
+
         <TextView
                 android:text="App Version"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/appversion"
-                android:textSize="20sp"
+                android:textSize="10sp"
                 android:gravity="center"
                 android:layout_marginTop="200dp"
         />
@@ -47,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
-                android:textSize="20sp"
+                android:textSize="10sp"
                 android:gravity="center"/>
 
     </LinearLayout>

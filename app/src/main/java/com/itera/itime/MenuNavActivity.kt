@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.itera.itime.maps.DirectionActivity
 import kotlinx.android.synthetic.main.activity_menu_nav.*
 import kotlinx.android.synthetic.main.app_bar_menu_nav.*
 
@@ -77,7 +78,7 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 loadRateUs(frag7 = grateus())
             }
             R.id.nav_share_layout -> {
-                loadShare(frag8 = hShare())
+                startActivity(Intent(this,DirectionActivity::class.java))
             }
             R.id.nav_setting_layout -> {
                 loadSetting(frag9 = iSetting())

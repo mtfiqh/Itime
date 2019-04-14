@@ -2,6 +2,7 @@ package com.itera.itime.addtionalmenu
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.itera.itime.R
 
 class SettingActivity : AppCompatActivity() {
 

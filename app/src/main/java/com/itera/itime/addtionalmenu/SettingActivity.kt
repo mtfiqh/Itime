@@ -1,12 +1,12 @@
-package com.itera.itime
+package com.itera.itime.addtionalmenu
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class Direction : AppCompatActivity() {
+class SettingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_direction)
+        setContentView(R.layout.activity_setting)
     }
 }

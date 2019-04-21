@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fdataruangan.*
 
-class zdataruangan : AppCompatActivity() {
+class z5dataruangan : AppCompatActivity() {
     lateinit var ref: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {

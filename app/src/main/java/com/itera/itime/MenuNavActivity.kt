@@ -2,7 +2,6 @@ package com.itera.itime
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -57,82 +56,35 @@ class MenuNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_lihatjadwal_layout -> {
-                loadLihatJadwal(frag1 = alihatjadwal())
+                startActivity(Intent(this,z0lihatjadwal::class.java))
             }
             R.id.nav_catatan_layout -> {
-                loadCatatan(frag2 = bcatatan())
+                startActivity(Intent(this,z1catatan::class.java))
             }
             R.id.nav_jadwal_layout -> {
-                loadJadwal(frag3 = cjadwal())
+                startActivity(Intent(this,z2jadwal::class.java))
             }
             R.id.nav_datamatakuliah_layout -> {
-                loadDataMataKuliah(frag4 = ddatamatakuliah())
+                startActivity(Intent(this,z3datamatakuliah::class.java))
             }
             R.id.nav_datadosen_layout -> {
-                loadDataDosen(frag5 = edatadosen())
+                startActivity(Intent(this,z4datadosen::class.java))
             }
             R.id.nav_dataruangan_layout -> {
-                startActivity(Intent(this,zdataruangan::class.java))
+                startActivity(Intent(this,z5dataruangan::class.java))
             }
             R.id.nav_rateus_layout -> {
-                loadRateUs(frag7 = grateus())
+                startActivity(Intent(this,z6rateus::class.java))
             }
             R.id.nav_share_layout -> {
-                startActivity(Intent(this,DirectionActivity::class.java))
+                startActivity(Intent(this,z7share::class.java))
             }
             R.id.nav_setting_layout -> {
-                loadSetting(frag9 = iSetting())
+                startActivity(Intent(this,z8setting::class.java))
             }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
-    }
-    private fun loadLihatJadwal(frag1: alihatjadwal){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag1)
-        fm.commit()
-    }
-
-    private fun loadCatatan(frag2: bcatatan){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag2)
-        fm.commit()
-    }
-
-    private fun loadJadwal(frag3: cjadwal){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag3)
-        fm.commit()
-    }
-
-    private fun loadDataMataKuliah(frag4: ddatamatakuliah){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag4)
-        fm.commit()
-    }
-
-    private fun loadDataDosen(frag5: edatadosen){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag5)
-        fm.commit()
-    }
-
-    private fun loadRateUs(frag7: grateus){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag7)
-        fm.commit()
-    }
-
-    private fun loadShare(frag8: hShare){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag8)
-        fm.commit()
-    }
-
-    private fun loadSetting(frag9: iSetting){
-        val fm = supportFragmentManager.beginTransaction()
-        fm.replace(R.id.framelayout, frag9)
-        fm.commit()
     }
 }

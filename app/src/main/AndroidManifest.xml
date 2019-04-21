@@ -22,6 +22,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".z0lihatjadwal">
+        </activity>
         <activity android:name=".z5dataruangan">
         </activity>
         <activity android:name=".z8setting">
@@ -37,8 +39,6 @@
         <activity android:name=".z2jadwal">
         </activity>
         <activity android:name=".z1catatan">
-        </activity>
-        <activity android:name=".z0lihatjadwal">
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

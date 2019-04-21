@@ -15,7 +15,7 @@
             android:layout_height="match_parent"/>
 
 
-        <android.support.design.widget.NavigationView
+    <android.support.design.widget.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -23,5 +23,174 @@
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header_menu_nav"
             app:menu="@menu/activity_menu_nav_drawer"/>
+
+    <GridLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:orientation="horizontal">
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     app:layout_columnWeight="1"
+                     app:layout_rowWeight="1"
+                     android:background="@color/LightSkyBlue">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="false"
+                           android:id="@+id/user"
+                           android:src="@drawable/user"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:textSize="20sp"
+                          android:textColor="#FFFFFF"
+                          android:layout_below="@id/user"
+                          android:layout_centerHorizontal="true"
+                          android:text="Profile"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:background="#D2691E">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/job"
+                        android:src="@drawable/pin"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/job"
+                        android:layout_centerHorizontal="true"
+                        android:text="Search Job"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:background="#CD5C5C">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/notif"
+                        android:src="@drawable/bell"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notif"
+                        android:layout_centerHorizontal="true"
+                        android:text="Notification"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:background="#B8860B">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/mail"
+                        android:src="@drawable/mail"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mail"
+                        android:layout_centerHorizontal="true"
+                        android:text="Messages"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:background="#2E8B57">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/rate"
+                        android:src="@drawable/star"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rate"
+                        android:layout_centerHorizontal="true"
+                        android:text="Rate Card"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:background="#BC8F8F">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/rev"
+                        android:src="@drawable/like"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rev"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#FFFFFF"
+                        android:text="Review "/>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </GridLayout>
 
 </android.support.v4.widget.DrawerLayout>

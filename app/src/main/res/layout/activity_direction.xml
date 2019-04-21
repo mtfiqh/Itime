@@ -7,4 +7,3 @@
           android:id="@+id/map"
           tools:context=".maps.DirectionActivity"
           android:name="com.google.android.gms.maps.SupportMapFragment"/>
-

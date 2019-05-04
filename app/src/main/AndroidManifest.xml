@@ -22,6 +22,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Praktikum.FirebaseCRUD">
+        </activity>
         <activity android:name=".z0lihatjadwal">
         </activity>
         <activity android:name=".z5dataruangan">

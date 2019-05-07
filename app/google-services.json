@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "726568120319-ogk16j7u3666t0nfqedql53j2riu7h1u.apps.googleusercontent.com",
+          "client_id": "726568120319-4kl1e8qmuveb5ose4dr4nic1du9afgpq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.itera.itime",
-            "certificate_hash": "e77b4104870abd61e37565904336bd3401b88a87"
+            "certificate_hash": "6111dfb70620735fb7a7ddde513c008169c65ef7"
           }
         },
         {
@@ -29,6 +29,18 @@
             "package_name": "com.itera.itime",
             "certificate_hash": "eff3ac88b15bef3eea10e71d45e7a0e577d39fe4"
           }
+        },
+        {
+          "client_id": "726568120319-ogk16j7u3666t0nfqedql53j2riu7h1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itera.itime",
+            "certificate_hash": "e77b4104870abd61e37565904336bd3401b88a87"
+          }
+        },
+        {
+          "client_id": "726568120319-uvm48tmuldtoi12fqer01a5h4srk1v9u.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
